@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            android:background="@drawable/anhbia"
+            android:layout_alignParentTop="true"/>
+        <de.hdodenhof.circleimageview.CircleImageView
+
+            android:id="@+id/profile_image"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/avatar"
+            app:civ_border_width="2dp"
+            android:layout_marginTop="26dp"
+            android:layout_marginStart="16dp"
+
+            app:civ_border_color="#f2f5f8"
+            />
+        <TextView
+            android:id="@+id/txttenface"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:layout_marginTop="38dp"
+            android:layout_marginStart="16dp"
+            android:textStyle="bold"
+            android:layout_toRightOf="@+id/profile_image"
+            android:text="Trần Đình Huy"/>
+        <TextView
+            android:id="@+id/txtemailface"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:textSize="12sp"
+            android:layout_toRightOf="@+id/profile_image"
+            android:layout_below="@id/txttenface"
+            android:layout_marginLeft="20dp"
+            android:text="huytdps13400@fpt.edu.vn"/>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cv1"
+            android:layout_below="@id/profile_image"
+            android:layout_centerHorizontal="true"
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            app:cardCornerRadius="16dp"
+            android:layout_marginBottom="10dp">
+            <TextView
+                android:id="@+id/hello"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="30dp"
+                android:layout_width="150dp"
+                android:fontFamily="@font/bangers"
+                android:layout_height="25dp"
+                android:textSize="12sp"
+                android:textColor="@android:color/black"
+                android:textScaleX="1.3"
+                android:text="Hello Huy,Chào Buổi Sáng !"/>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cv2"
+            app:cardCornerRadius="6dp"
+            android:layout_margin="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cv1"
+            android:layout_marginBottom="5dp">
+
+            <com.smarteist.autoimageslider.SliderView
+                android:id="@+id/imageSlider"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                app:sliderAnimationDuration="600"
+                app:sliderAutoCycleDirection="back_and_forth"
+                app:sliderAutoCycleEnabled="true"
+                app:sliderIndicatorAnimationDuration="600"
+                app:sliderIndicatorGravity="center_horizontal|bottom"
+                app:sliderIndicatorMargin="15dp"
+                app:sliderIndicatorOrientation="horizontal"
+                app:sliderIndicatorPadding="3dp"
+                app:sliderIndicatorRadius="2dp"
+                app:sliderIndicatorSelectedColor="#5A5A5A"
+                app:sliderIndicatorUnselectedColor="#FFF"
+                app:sliderScrollTimeInSec="1"
+                app:sliderStartAutoCycle="true"
+               />
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="2dp"
+            android:layout_below="@id/cv2"
+            app:cardCornerRadius="12dp"
+            >
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txtclass"
+                    android:textSize="16dp"
+                    android:text="Main Menus"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:weightSum="4"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="170dp">
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:id="@+id/imagekhoahoc"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:src="@drawable/classlop"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Class"
+                        android:textColor="@android:color/black"
+                        android:textSize="12sp"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:id="@+id/imagesinhvien"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:src="@drawable/student"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Student"
+                        android:textColor="@android:color/black"
+                        android:textSize="12sp"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:id="@+id/imagenew"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:src="@drawable/news"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="News"
+                        android:textColor="@android:color/black"
+                        android:textSize="12sp"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:id="@+id/imagemang"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:src="@drawable/mxh"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Social Network"
+                        android:textColor="@android:color/black"
+                        android:textSize="12sp"/>
+
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcyrss"
+        android:layout_width="match_parent"
+        android:layout_height="230dp"/>
+</LinearLayout>
+
+
+</ScrollView>

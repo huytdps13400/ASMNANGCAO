@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="maunen">#05a9f1</color>
+    <color name="Do">#DD0000</color>
+    <color name="Xanh">#009933</color>
+</resources>

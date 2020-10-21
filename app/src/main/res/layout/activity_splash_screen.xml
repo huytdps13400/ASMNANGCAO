@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+
+    tools:context=".SplashScreen">
+
+
+    <ImageView
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="35dp"
+        android:transitionName="logo_transition"
+        android:id="@+id/logo"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:src="@drawable/logo1"/>
+  <com.airbnb.lottie.LottieAnimationView
+      android:id="@+id/aniamtion"
+      android:layout_width="wrap_content"
+      android:layout_height="200dp"
+      android:layout_below="@id/logo"
+      app:lottie_rawRes="@raw/splash411"
+      app:lottie_autoPlay="true"
+      android:layout_centerHorizontal="true"
+     />
+    <TextView
+        android:id="@+id/ten"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/bangers"
+        android:text="Student MANAGER"
+        android:transitionName="ten_transition"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/aniamtion"
+        android:textSize="50sp"
+        android:textColor="#000"
+        android:layout_marginLeft="30dp"
+        />
+
+    <TextView
+        android:id="@+id/loimoi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Please come with us"
+        android:textSize="15sp"
+        android:textColor="#000"
+        android:layout_marginLeft="120dp"
+        android:layout_below="@+id/ten"
+
+        />
+
+</RelativeLayout>

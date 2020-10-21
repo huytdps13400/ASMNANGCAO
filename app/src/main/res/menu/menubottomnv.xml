@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<item android:title="Class" android:id="@+id/lop" android:icon="@drawable/ic_class_black_24dp"/>
+    <item android:title="Student" android:id="@+id/sinhvien" android:icon="@drawable/ic_class_black_24dp"/>
+    <item android:title="Home" android:id="@+id/home" android:icon="@drawable/ic_class_black_24dp"/>
+    <item android:title="News" android:id="@+id/bangtin" android:icon="@drawable/ic_class_black_24dp"/>
+</menu>

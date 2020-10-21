@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:theme="@style/AppBottomSheetDialogTheme"
+    >
+    <View
+        android:layout_width="70dp"
+        android:layout_height="3dp"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@android:color/darker_gray"
+        />
+    <TextView
+        android:id="@+id/tvNewItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="UPDATE SINH VIÊN"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="20dp"
+        android:textColor="#05a9f1"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp" />
+
+
+    <EditText
+        android:id="@+id/edt_makh"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textColor="#000"
+        android:hint="Mã Sinh Viên"
+        android:textColorHint="#000"
+        android:layout_height="50dp"/>
+
+    <EditText
+        android:id="@+id/edt_tenkh"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:hint="Tên Sinh Viên"
+        android:textColor="#000"
+        android:textColorHint="#000" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:drawablePadding="10dp"
+        android:fontFamily="@font/roboto_regular"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="59dp"
+            android:layout_height="50dp"
+            android:drawableLeft="@drawable/icons8_google_classroom_24px"
+            android:fontFamily="@font/roboto_regular"
+            android:padding="10dp"
+            android:textColor="#f5f5f5"
+            android:textColorHint="#fff"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/spinermaloai"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:drawablePadding="10dp"
+            android:fontFamily="@font/roboto_regular"
+            android:padding="15dp"
+
+            android:spinnerMode="dialog" />
+    </LinearLayout>
+    <EditText
+        android:id="@+id/edt_tien"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textColor="#000"
+        android:layout_marginTop="10dp"
+        android:hint="Ngành"
+        android:textColorHint="#000"
+        android:layout_height="50dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/imghinhshow"
+            android:layout_width="100dp"
+            android:src="@drawable/hinhanh"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_height="100dp"/>
+        <Button
+            android:id="@+id/btnaddhinh"
+            android:text="Chụp Ảnh"
+            android:layout_marginTop="10dp"
+            android:textColor="#fff"
+            android:background="@drawable/btnbogoc"
+            android:layout_toRightOf="@+id/imghinhshow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_marginTop="20dp"
+            android:text="Update"
+            android:gravity="center"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:background="@drawable/btnbogoc"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/btnadd"
+            android:layout_height="30dp"
+            />
+
+</LinearLayout>
